@@ -40,8 +40,8 @@ function App() {
 
     return (
         <div className="App">
-            <h2>Tic Tac Toe</h2>
-            <div className="game-board">
+            <h2 className='App__title'>Tic Tac Toe</h2>
+            <div className="App__gameboard">
                 {cells.map((cell, idx) => {
                     return (
                         <Cell
@@ -57,7 +57,7 @@ function App() {
                     )
                 })}
             </div>
-            <p>{winningMessage || message}</p>
+            <p className='App__message'>{winningMessage || message}</p>
         </div>
     );
 }
